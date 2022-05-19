@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        :focus, :active { outline:0; }
+
+        #accordion { 
+            width:500px; 
+            margin:0 auto; 
+            font:normal normal 13px sans-serif; 
+            color:#555; 
+        }
+
+        #accordion h3 {
+            padding:5px; 
+            -webkit-border-radius:3px; 
+            border-radius:3px;
+            -moz-box-shadow:0 1px 4px #CCC; 
+            -webkit-box-shadow:0 1px 4px #CCC; 
+            box-shadow:0 1px 4px #CCC; 
+            margin:3px 0; 
+            cursor:pointer;
+        }
+
+        #accordion div {
+            margin:0 0 0 10px; 
+            padding:10px; 
+            border:solid 1px #F6F6F6; 
+            height:auto;
+        }
+    </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <p>Click the headers to expand or collapse!</p>
+
+    <div id="accordion">
+    
+        <h3>Asp.Net</h3>
+            <div>Hello World (C#)
+            <pre>
+            using System;
+            protected void Page_Load(object sender, EventArgs e)
+            {
+              Response.Write("Hello, world");
+            }</pre></div>
+            
+        <h3>jQuery</h3>
+            <div>jQuery is a JavaScript library to write cross browser client side script.
+            <pre>
+            $(document).ready(function() {
+                $('#accordion').accordion();
+                
+                $('#Close').click(function() {
+                    $('#div').hide();
+                });    
+            });</pre></div>
+            
+        <h3>CSS</h3>
+            <div>Cascading Style Sheets (CSS) is used for styling and laying HTML 
+                elements on a web page.
+            <pre>
+            .classname div { 
+                padding:3px 5px; border:solid 1px #CCC 
+            }
+            </pre></div>
+            
+        <h3>Ajax</h3>
+            <div>Ajax (Asynchronous JavaScript and XML) allows Web applications to 
+                send and receive data from a server, asynchronously. 
+                It is a clean way of communicating with a server, 
+                without refreshing the existing page.
+            </div>
+            
+        <h3>SQL Server</h3>
+            <div>Microsoft's SQL Server is a Relational Database Managment System (RDBMS), 
+                whose primary function is to store and retrieve various types of data.
+            <pre>
+            SELECT EmpID, EmpName, Designation
+                FROM Employee
+                    WHERE EmpID = 3</pre></div>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        // jQuery FUNCTION.
+        $("#accordion").accordion({
+            heightStyle: "content"
+        });
+    });
+    // EXPAND AND COLLAPSE MENUS ON �HEADER CLICK�
+    $("#accordion h3").click(function () {
+        $("#accordion h3").animate({ 'background-color': '#FFF' }, 300);
+        $("#accordion h3").css({ 'color': '#000' });
+
+        // HIGHLIGHT THE SELECTED HEADER (BLOCK)
+        $(this).animate({ 'background-color': '#FA6305' }, 300);
+        $(this).css({ 'color': '#FFF' });
+    });
+</script>
+</html>

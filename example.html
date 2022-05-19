@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating slider</title>
+
+    <!-- css animation cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+  <!-- google font cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    
+
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+
+    <!-- rotaring slider css -->
+    <link rel="stylesheet" href="rotating-slider.min.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="d-md-flex">
+        <div class="container ">
+            <ul class="menu d-md-flex">
+                <li class="email"><a href="tel:email"><i class="fas fa-envelope"></i>hello@colorlib.com
+                </a> 
+                </li>
+                <li class="free flex-grow-1"> Free Shipping for all Order of $99</li>
+                <li class="social-icon">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </li>
+         
+            </ul>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class=" header-nav">
+                <div class="logo">
+                    <img src="img/logo.jpeg"  alt="LOGO" >
+                </div>
+                <div class="add">
+                    <!-- <img src="https://tpc.googlesyndication.com/simgad/12551348051857534822" border="0"  alt="" class="img_ad"> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<section class="banner" style="background-image: url(img/slider1.jpg);">
+    
+        <div class="rotating-slider d-lg-block d-none">
+            <ul class="slides">
+                <li>
+                    <div class="inner ">
+                        <img src="img/slider1.jpg" class="imgi d-none" alt="">
+                        <a href="#" ><img class="py-5 pe-3" src="img/clock.png" width="50px" alt=""> <span>click here</span> </a>
+                        <h3> Grievance Redressal</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <img src="img/slider3.jpg" class="imgi d-none" alt="">
+                        <a href="#" ><img class="py-5 pe-3" src="img/mobile-phone.png" width="50px" alt=""> <span>click here</span> </a>
+                        <h3> Schedule</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <img src="img/slider2.jpg" class="imgi d-none" alt="">
+                        <a href="#" ><img class="py-5 pe-3" src="img/checkout.png" width="50px" alt=""> <span>click here</span> </a>
+                        <h3> online shopping</h3>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <img src="img/slider4.jpg" class="imgi d-none" alt="">
+                        <a href="#" ><img class="py-5 pe-3" src="img/clock.png" width="50px" alt=""> <span>click here</span> </a>
+                        <h3> vleadingladies</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <img src="img/slider4.jpg" class="imgi d-none" alt="">
+                        <a href="#" ><img class="py-5 pe-3" src="img/mobile-phone.png" width="50px" alt=""> <span>click here</span> </a>
+                        <h3> mobile app</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <img src="img/slider4.jpg" class="imgi d-none" alt="">
+                        <a href="#" ><img class="py-5 pe-3" src="img/book.png" width="50px" alt=""> <span>click here</span> </a>
+                        <h3> e-voice</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <img src="img/slider3.jpg" class="imgi d-none" alt="">
+                        <a href="#" ><img class="py-5 pe-3" src="img/mobile-phone.png" width="50px" alt=""> <span>click here</span> </a>
+                        <h3> Assure Natural</h3>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">
+                        <img src="img/slider4.jpg" class="imgi d-none" alt="">
+                        <a href="#" ><img class="py-5 pe-3" src="img/bank.png" width="50px" alt=""> <span>click here</span> </a>
+                        <h3> Bank Pan</h3>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-btn d-flex flex-wrap align-content-center justify-content-center ">
+            <a href="#" class="btn btn-primary" data-send="grievance redressal"><i class="far fa-clock"></i> grievance redressal</a>
+            <a href="#" class="btn btn-primary" data-send="mobile app"><i class="fas fa-mobile-alt"></i> mobile app</a>
+            <a href="#" class="btn btn-primary" data-send="schedule"><i class="far fa-clock"></i> schedule</a>
+            <a href="./ecommerce/index.html" class="btn btn-primary" data-send="online shopping"><i class="fas fa-shopping-cart"></i> online shopping</a>
+            <a href="#" class="btn btn-primary" data-send="vleadingladies"><i class="fas fa-mobile-alt"></i> vleadingladies</a>
+            <a href="#" class="btn btn-primary" data-send="e-voice"><i class="fas fa-book"></i> e-voice</a>
+            <a href="#" class="btn btn-primary" data-send="assure natural"><i class="fas fa-mobile-alt"></i> assure natural</a>
+            <a href="#" class="btn btn-primary" data-send="bank pan"><i class="fas fa-store"></i> bank pan</a>
+          </div>
+</section>
+
+
+<div class="language">
+    <h1>SELECT LANGUAGE</h1>
+    <div class="language-wraper d-flex flex-wrap">
+      <span>English</span>
+      <span>हिंदीਪੰਜਾਬੀ</span>
+      <span>বাংলা</span>
+      <span>ગુજરાતી</span>
+      <span>मराठी</span>
+      <span>தமிழ்</span>
+      <span>తెలుగు</span>
+      <span>தமிழ்</span>
+      <span>മലയാ</span>
+      <span>ളംಕನ್ನಡ</span>
+    </div>
+  </div>
+  <div class="search-area">
+          
+    <!-- <span class="search-none"><i class="fas fa-times"></i></span> -->
+    <div class="search-center">
+      <input type="text" placeholder="Search For Product Name And Description" class="form-control ">
+      <button type="button" class="btn btn-primary">SEARCH</button>
+    </div>
+</div>
+
+
+<section class="menu-area" >
+    <ul class="side-menu" >
+
+        <li class="after" >
+            <a href="#">
+                <img src="img/menu (1).png" alt="">
+                <span  class="animation">menu</span>
+            </a>
+            <ul class="menu-wraper" >
+                <li class=" "><a href="#home" class="active scroll">HOME</a></li>
+                <li class=""><a href="#">COMPANY</a></li>
+                <li class="after "> <a href="#">PRODUC</a>
+                
+                  <ul class="dropdown">
+                    <a  href="#">ABOUT </a>
+                    <a  href="#">VESTIGE</a>
+                    <a  href="#"> BUSINESS</a>
+                    <a  href="#"> MANAGEMENT</a>
+                    <a  href="#"> OPPORTUNITY</a>
+                    <a  href="#"> SUCCESS</a>
+                  </ul>
+    
+    
+                </li>
+                <li class="after drophas brandIist">
+                   <a href="#"><i class="fas fa-caret-down"></i>BRANDS</a>
+    
+                  <ul class="dropdown  brands">
+                    <div class="brand">
+                      <a  href="#"><img src="img/img01.png" alt=""></a>
+                      <a  href="#"><img src="img/img02.png" alt=""></a>
+                      <a  href="#"> <img src="img/img03.png" alt=""></a>
+                      <a  href="#"> <img src="img/img04.png" alt=""></a>
+                      <a  href="#"> <img src="img/img05.png" alt=""></a>
+                      <a  href="#"> <img src="img/img06.png" alt=""></a>
+                      <a  href="#"> <img src="img/img07.png" alt=""></a>
+                      <a  href="#"> <img src="img/img08.png" alt=""></a>
+                      <a  href="#"> <img src="img/img09.png" alt=""></a>
+                      <a  href="#"> <img src="img/img010.png" alt=""></a>
+                      <a  href="#"> <img src="img/img011.png" alt=""></a>
+                    </div>
+                  </ul>
+    
+    
+    
+                </li>
+                <li class=""><a href="#">NEWS</a></li>
+                <li class=""><a href="#">GALLERY</a></li>
+                <li class=""><a href="#">SCHEDULE</a></li>
+                <li class=""><a href="#">BRANCHES</a></li>
+                <li class="after"><a href="#">DOWNLOADS</a>
+                    <ul class="dropdown">
+                        <a  href="#">ABOUT </a>
+                        <a  href="#">VESTIGE</a>
+                        <a  href="#"> BUSINESS</a>
+                        <a  href="#"> MANAGEMENT</a>
+                        <a  href="#"> OPPORTUNITY</a>
+                        <a  href="#"> SUCCESS</a>
+                      </ul>
+                </li>
+                <li class=""><a href="#">CAREER</a></li> 
+
+         </ul>
+        </li>
+        <li onclick="on()">
+            <a href="#">
+                <img src="img/user.png" alt="">
+                <span  class="animation">login</span>
+            </a>
+          
+        </li>
+        <li>
+            <a href="#" onclick="onlg()">
+                <img src="img/language.png" alt="">
+                <span  class="animation">language</span>
+            </a>
+        </li>
+        <li>
+            <a href="#"  onclick="onsr()">
+                <img src="img/loupe.png" alt="">
+                <span  class="animation">search</span>
+            </a>
+        </li>
+        <li class="after country1">
+            <a href="#">
+                <img src="img/bangladesh.png" alt="">
+                <span  class="animation">country</span>
+            </a>
+            <ul class="menu-wraper menu-wraper1">
+                <li>
+                    <a href="#" class="img">
+                        <img  src="img/india.jpg" alt="">
+                    </a> 
+                </li>
+                <li>
+                    <a href="#" class="img">
+                        <img src="img/ghana.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="img">
+                        <img src="img/saudiarabia.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="img">
+                        <img src="img/india.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="img">
+                        <img src="img/uae.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </li>
+ 
+        <li class="d-none">
+            <a href="#">
+                <img src="img/toggle.png" alt="">
+                <span  class="animation">button</span>
+            </a>
+        </li>
+    </ul>
+    <!-- <img src="img/menu.png" alt=""> -->
+</section>
+
+    <!-- login area -->
+    <div onclick="off()" id="overlay"></div>
+
+    <div class="login-area">
+        <h1>LOGIN</h1>
+        <div class="login-input-area">
+          <form action="">
+  
+            <label for="text">DISTRIBUTOR ID</label>
+            <input type="text " id="text" placeholder="Enter Your Distributor ID">
+            <label for="password">PASSWORD</label>
+            <input type="password " id="password" placeholder="Your Password">
+            <input type="submit"   id="submit" value="GO">
+          </form>
+          <a href="#">FORGOT PASSWORD?</a>
+        </div>
+      </div>
+
+
+
+
+<section class="bgcolor">
+    <div class="aboutus my-5">
+        <div class="container">
+            <h1 class="text-center my-5 pb-3">About us</h1>
+            <div class="aboutrow">
+                <div class="aboutcol">
+                    <img class="img-fit w-100 overflow-hidden" src="img/001.jpg" alt="aboutusImg">
+                </div>
+                <div class="aboutcol">
+                    <h3>About us title </h3>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque doloremque molestias asperiores quidem alias soluta, excepturi accusamus nisi incidunt porro. Ad impedit mollitia incidunt. Dolor itaque incidunt ullam dolorum.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="testimonial">
+    <div class="container">
+        <h1 class="text-center my-5 py-4">Testimonials</h1>
+        <div class="responsive">
+          <div class="slide-box ">
+            
+            <div class="profileImg">
+                <img src="img/download (22).jpg" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sapiente nihil ipsum sit deleniti. Obcaecati ullam laborum quisquam! Amet neque aspernatur.</p>
+            <h4>--Md.Mehedi Hasan</h4>
+            
+          </div>
+          <div class="slide-box">
+            
+            <div class="profileImg">
+                <img src="img/download (23).jpg" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sapiente nihil ipsum sit deleniti. Obcaecati ullam laborum quisquam! Amet neque aspernatur.</p>
+            <h4>--Md.Mehedi Hasan</h4>
+            
+    
+          </div>
+          <div class="slide-box">
+            
+            
+            <div class="profileImg">
+                <img src="img/download (24).jpg" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sapiente nihil ipsum sit deleniti. Obcaecati ullam laborum quisquam! Amet neque aspernatur.</p>
+            <h4>--Md.Mehedi Hasan</h4>
+    
+          </div>
+          <div class="slide-box">
+            
+            <div class="profileImg">
+                <img src="img/images (7).jpg" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sapiente nihil ipsum sit deleniti. Obcaecati ullam laborum quisquam! Amet neque aspernatur.</p>
+            <h4>--Md.Mehedi Hasan</h4>
+            
+    
+          </div>
+          <div class="slide-box">
+            
+            <div class="profileImg">
+                <img src="img/images (8).jpg" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sapiente nihil ipsum sit deleniti. Obcaecati ullam laborum quisquam! Amet neque aspernatur.</p>
+            <h4>--Md.Mehedi Hasan</h4>
+            
+    
+          </div>
+        </div>
+    </div>
+    
+    </section>
+
+<section class="bg-dark py-5 text-light footer-widget">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-5 col-xl-4 text-center text-md-left">
+             <div class="mt-4">
+                <a href="https://osellers.com" class="d-block">
+                <img class=" ls-is-cached lazyloaded" src="img/logo.jpeg">
+                </a>
+                <div class="my-3">
+                   Osellers is a patform for buying &amp; selling your product and property or finding job
+                </div>
+                <div class="d-inline-block d-md-block mb-4">
+                   <form class="form-inline" method="POST" action="https://osellers.com/subscribers">
+                      <input type="hidden" name="_token" value="Bz0dpl3hCAWvGgCHl7jr57n6d4IR0RUkzuXtfAFa">                            
+                      <div class="form-group mb-0">
+                         <input type="email" class="form-control" placeholder="Your Email Address" name="email" required="">
+                      </div>
+                      <button type="submit" class="btn btn-primary">
+                      Subscribe
+                      </button>
+                   </form>
+                </div>
+                <div class="w-300px mw-100 mx-auto mx-md-0">
+                   <a href="https://play.google.com/store/apps/details?id=com.osellers" target="_blank" class="d-inline-block mr-3 ml-0">
+                   <img src="https://osellers.com/public/assets/img/play.png" class="mx-100 h-40px">
+                   </a>
+                   <a href="https://play.google.com/store/apps/details?id=com.osellers" target="_blank" class="d-inline-block">
+                   <img src="https://osellers.com/public/assets/img/app.png" class="mx-100 h-40px">
+                   </a>
+                </div>
+             </div>
+          </div>
+          <div class="col-lg-3 ml-xl-auto col-md-4 mr-0">
+             <div class="text-center text-md-left mt-4">
+                <h4 class="fs-13 text-uppercase fw-600 border-bottom border-gray-900 pb-2 mb-4">
+                   Contact Info
+                </h4>
+                <ul class="list-unstyled">
+                   <li class="mb-2">
+                      <span class="d-block opacity-30">Address:</span>
+                      <span class="d-block opacity-70">150/A Panchlaish Muradpur, Chattogram</span>
+                   </li>
+                   <li class="mb-2">
+                      <span class="d-block opacity-30">Phone:</span>
+                      <span class="d-block opacity-70">01788555115</span>
+                   </li>
+                   <li class="mb-2">
+                      <span class="d-block opacity-30">Email:</span>
+                      <span class="d-block opacity-70">
+                      <a href="mailto:support@osellers.com" class="text-reset">support@osellers.com</a>
+                      </span>
+                   </li>
+                </ul>
+             </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+             <div class="text-center text-md-left mt-4">
+                <h4 class="fs-13 text-uppercase fw-600 border-bottom border-gray-900 pb-2 mb-4">
+                   About Us
+                </h4>
+                <ul class="list-unstyled">
+                   <li class="mb-2">
+                      <a href="https://osellers.com/about-us" class="opacity-50 hov-opacity-100 text-reset">
+                      About Us
+                      </a>
+                   </li>
+                   <li class="mb-2">
+                      <a href="https://osellers.com/terms-and-condition" class="opacity-50 hov-opacity-100 text-reset">
+                      Terms &amp; Condition
+                      </a>
+                   </li>
+                   <li class="mb-2">
+                      <a href="https://osellers.com/privacy-policy" class="opacity-50 hov-opacity-100 text-reset">
+                      Privacy &amp; Policy
+                      </a>
+                   </li>
+                   <li class="mb-2">
+                      <a href="https://osellers.com/sitemap.xml" class="opacity-50 hov-opacity-100 text-reset">
+                      Sitemap
+                      </a>
+                   </li>
+                   <li class="mb-2">
+                      <a href="https://osellers.com/faq" class="opacity-50 hov-opacity-100 text-reset">
+                      FAQ
+                      </a>
+                   </li>
+                </ul>
+             </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+             <div class="text-center text-md-left mt-4">
+                <h4 class="fs-13 text-uppercase fw-600 border-bottom border-gray-900 pb-2 mb-4">
+                   My Account
+                </h4>
+                <ul class="list-unstyled">
+                   <li class="mb-2">
+                      <a class="opacity-50 hov-opacity-100 text-reset" href="https://osellers.com/logout">
+                      Logout
+                      </a>
+                   </li>
+                   <li class="mb-2">
+                      <a class="opacity-50 hov-opacity-100 text-reset" href="https://osellers.com/purchase_history">
+                      Order History
+                      </a>
+                   </li>
+                   <li class="mb-2">
+                      <a class="opacity-50 hov-opacity-100 text-reset" href="https://osellers.com/wishlists">
+                      My Wishlist
+                      </a>
+                   </li>
+                   <li class="mb-2">
+                      <a class="opacity-50 hov-opacity-100 text-reset" href="https://osellers.com/track-your-order">
+                      Track Order
+                      </a>
+                   </li>
+                </ul>
+             </div>
+             <div class="text-center text-md-left mt-4">
+                <h4 class="fs-13 text-uppercase fw-600 border-bottom border-gray-900 pb-2 mb-4">
+                   Be A Seller
+                </h4>
+                <a href="https://osellers.com/shops/create" class="btn btn-primary btn-sm shadow-md">
+                Apply Now
+                </a>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+    
+    <!-- slick slider js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
+
+    <script src="jquery.rotating-slider.min.js"></script>
+    <script src="./main.js"></script>
+    
+    <script>
+          $('.responsive').slick({
+  infinite: true,
+  speed: 1000,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000000,
+   prevArrow:'<span class="next_arow"><i class="fas fa-chevron-left"></i></span>',
+   nextArrow:'<span class="prev_arow"><i class="fas fa-chevron-right"></i></span>',
+   responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+        $(document).ready(function(){
+        $('.testimonial-slider').slick({
+            infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+//             infinite: true,
+//   speed: 1000,
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   autoplay: true,
+//   autoplaySpeed: 200000000,
+//    prevArrow:'<span class="next_arow"><i class="fas fa-chevron-left"></i></span>',
+//    nextArrow:'<span class="prev_arow"><i class="fas fa-chevron-right"></i></span>',
+//    responsive: [
+//     {
+//       breakpoint: 1024,
+//       settings: {
+//         slidesToShow: 3,
+//         slidesToScroll: 1,
+//         infinite: true,
+//       }
+//     },
+//     {
+//       breakpoint: 767,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 1
+//       }
+//     },
+//     {
+//       breakpoint: 600,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       }
+//     }
+//     // You can unslick at a given breakpoint now by adding:
+//     // settings: "unslick"
+//     // instead of a settings object
+//   ]
+    });
+});
+    </script>
+</body>
+</html>
+
+
+
+
